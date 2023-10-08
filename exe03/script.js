@@ -10,6 +10,7 @@ function carregarImagem() {
 
 
     if (media >= 6) {
+        //imagem.src = altera o valor que estava na tag img src
         imagem.src = "/exe03/imagens/aprovado.png";
         frase.innerText = "Aprovado";
         frase.innerText = "Sua média é " + media + ", você foi Aprovado!";
