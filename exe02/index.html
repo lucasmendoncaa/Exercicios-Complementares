@@ -1,0 +1,25 @@
+<!--
+    2. Desenvolva uma página web para uma determinada loja que precisa calcular o preço de venda de um produto. O cálculo deve ser efetuado por meio da multiplicação do preço unitário × quantidade vendida e, posteriormente, subtraído o valor do desconto. Considere todas as variáveis do tipo de dado real, que serão digitadas pelo usuário, e um arquivo externo de JavaScript que contenha as funções necessárias para resolver o problema.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de preço de produtos</h1>
+
+    <form action="">
+        Valor do Produto: <input type="text" id="valorproduto"><br><br>
+        Quantidade Produto: <input type="text" id="quantidadeproduto"><br><br>
+        Desconto Produto(%): <input type="text" id="descontoproduto"><br>
+    </form>
+    <p id="resultado"></p>
+    <button onclick="calcularDesconto()">Calcular</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
