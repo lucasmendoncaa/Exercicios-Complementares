@@ -7,6 +7,10 @@ h1{
     text-align: center;
 }
 
+input{
+    margin: 5px;
+}
+
 .btn{
     border: 1px solid gray;
     position: relative;
@@ -31,4 +35,8 @@ h1{
 .dadosVeiculo{
     border: 1px solid gray;
     padding: 5px;
+}
+
+#recusaanonascimento, #recusaanofabricacao{
+    color: red;
 }
