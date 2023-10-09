@@ -1,0 +1,34 @@
+
+form{
+    border: 1.5px solid black;
+    padding: 5px;
+}
+h1{
+    text-align: center;
+}
+
+.btn{
+    border: 1px solid gray;
+    position: relative;
+    margin-top: 5px;
+    padding: 5px 15px 5px 15px;
+    left: 47%;
+    border-radius: 50px;
+}
+
+.btn:hover{
+    background-color: gray;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.dadosSegurador{
+    border: 1px solid gray;
+    margin-bottom: 5px;
+    padding: 5px;
+}  
+
+.dadosVeiculo{
+    border: 1px solid gray;
+    padding: 5px;
+}

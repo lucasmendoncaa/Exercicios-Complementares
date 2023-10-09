@@ -1,0 +1,60 @@
+<!--
+    Desenvolva uma página HTML que receberá as informações por meio de um formulário e realizará a validação dos dados digitados. Para isso, considere que uma seguradora de veículos precisa calcular o valor da apólice com base nas seguintes informações: nome, sexo e ano de nascimento do segurado, marca, modelo, ano de fabricação, valor do veículo e porcentagem do bônus. As seguintes validações deverão ser realizadas no formulário utilizando, para isso, um arquivo JavaScript externo:
+    a. O campo sexo deverá aceitar apenas F (Feminino) ou M (Masculino). 
+    b. O campo ano de nascimento deve aceitar um valor entre 1901 e 2001. 
+    c. O campo ano de fabricação deverá ser um valor inteiro positivo. 
+    d. O campo valor do veículo deve ser um número real positivo. e. O campo porcentagem do bônus deverá ser um número real entre 0 e 25.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Apólice Seguro</title>
+</head>
+<body>
+    <h1>Formulário Apólice</h1>
+
+    <form action="">
+        <div class="dadosSegurador">
+            Nome: <input type="text" id="nome">
+            <label>Sexo:
+            M: <input type="radio" id="sexo" value="M" name="sexo">
+            F: <input type="radio" id="sexo" value="F" name="sexo"></label><br>
+            Ano Nascimento: <input type="text" id="anonascimento">
+        </div>
+        <div class="dadosVeiculo">
+            Marca: <select id="marca">
+                <option value="escolha">Escolha a Marca</option>
+                <option value="fiat">Fiat</option>
+                <option value="volkswagen">Volkswagen</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="ford">Ford</option>
+            </select>
+            Modelo: <select id="modelo">
+                <option value="escolha">Escolha o Modelo</option>
+                <option value="">Fiat:</option>
+                <option value="uno">Uno</option>
+                <option value="palio">Pálio</option>
+                <option value="">volkswagen:</option>
+                <option value="gol">Gol</option>
+                <option value="fox">Fox</option>
+                <option value="">chevrolet:</option>
+                <option value="onix">Onix</option>
+                <option value="astra">Astra</option>
+                <option value="">ford:</option>
+                <option value="focus">Focus</option>
+                <option value="ka">Ka</option>
+                </select><br>
+            Ano Fabricação: <input type="text" id="anofabricacao">
+            Valor Veículo: <input type="text" id="valorveiculo"><br>
+            Porcentagem Bônus: (0-25) <input type="text" id="porcentagembonus">
+        </div>
+    </form>
+    <button class="btn" onclick="enviarFormulario()">Enviar</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
