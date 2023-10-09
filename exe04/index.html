@@ -20,35 +20,35 @@
     <form action="">
         <div class="dadosSegurador">
             Nome: <input type="text" id="nome">
-            <label>Sexo:
-            M: <input type="radio" id="sexo" value="M" name="sexo">
-            F: <input type="radio" id="sexo" value="F" name="sexo"></label><br>
+            Sexo: <input type="text" id="sexo"><br>
             Ano Nascimento: <input type="text" id="anonascimento">
+            <div type="hidden" id="recusaanonascimento"></div>
         </div>
         <div class="dadosVeiculo">
             Marca: <select id="marca">
                 <option value="escolha">Escolha a Marca</option>
-                <option value="fiat">Fiat</option>
-                <option value="volkswagen">Volkswagen</option>
-                <option value="chevrolet">Chevrolet</option>
-                <option value="ford">Ford</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Ford">Ford</option>
             </select>
             Modelo: <select id="modelo">
                 <option value="escolha">Escolha o Modelo</option>
                 <option value="">Fiat:</option>
-                <option value="uno">Uno</option>
-                <option value="palio">Pálio</option>
+                <option value="Uno">Uno</option>
+                <option value="Palio">Pálio</option>
                 <option value="">volkswagen:</option>
-                <option value="gol">Gol</option>
-                <option value="fox">Fox</option>
+                <option value="Gol">Gol</option>
+                <option value="Fox">Fox</option>
                 <option value="">chevrolet:</option>
-                <option value="onix">Onix</option>
-                <option value="astra">Astra</option>
+                <option value="Onix">Onix</option>
+                <option value="Astra">Astra</option>
                 <option value="">ford:</option>
-                <option value="focus">Focus</option>
-                <option value="ka">Ka</option>
+                <option value="Focus">Focus</option>
+                <option value="Ka">Ka</option>
                 </select><br>
             Ano Fabricação: <input type="text" id="anofabricacao">
+            <div type="hidden" id="recusaanofabricacao"></div>
             Valor Veículo: <input type="text" id="valorveiculo"><br>
             Porcentagem Bônus: (0-25) <input type="text" id="porcentagembonus">
         </div>
